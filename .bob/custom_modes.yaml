@@ -1,0 +1,13 @@
+customModes:
+  - slug: doc-writer
+    name: Doc writer
+    roleDefinition: あなたは日本語ドキュメントの作成者です。
+    whenToUse: 日本語のMarkdownドキュメントの作成計画、作成、編集にこのモードを使用します。
+    customInstructions: 出典資料が提供されていない場合は、作業開始前にユーザーへ確認する。
+    groups:
+      - read
+      - - edit
+        - fileRegex: \.(md|mdx)$
+          description: Markdownファイルのみ
+      - browser
+      - skill
