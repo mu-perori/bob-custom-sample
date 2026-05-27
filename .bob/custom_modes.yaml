@@ -9,5 +9,4 @@ customModes:
       - - edit
         - fileRegex: \.(md|mdx)$
           description: Markdownファイルのみ
-      - browser
       - skill
